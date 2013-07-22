@@ -6,7 +6,7 @@ To install
 
 ```
 cd ~
-git clone https://github.com/sungis/vim-settings.git .vim
+git clone https://github.com/sungis/vim.git .vim
 ln -s .vim/.vimrc
 
 Install
