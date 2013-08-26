@@ -9,6 +9,22 @@ cd ~
 git clone https://github.com/sungis/vim.git .vim
 ln -s .vim/.vimrc
 
+O 模式    （Vim 默认: CTRL-X CTRL-O） -- 全能补全，由一个自定义函数生成补全列表
+n 模式    （Vim 默认: CTRL-N）        -- 关键字补全，查找 'complete' 选项指定文件中的匹配单词，组成补全列表
+Tab 模式   调用 pydiction complete-dict
+
+
+pydiction.py
+============
+Note: You can skip this section if you don't plan to add more modules to complete-dict yourself.  Check if complete-dict already has the modules you intend to use.
+
+This is the Python script used to create the "complete-dict" Vim dictionary file.  I have created and bundled a default complete-dict for your use. I created it using Ubuntu 9.04 Linux, so there won't be any real win32 specific support in it. You're free to run pydiction.py to add, or upgrade, as modules as you want.  The dictionary file will still work if you're using windows, but it won't complete win32 related modules unless you tell it to.      
+
+Usage: In a command prompt, run:
+
+    $ python pydiction.py module ... [-v]
+
+
 Install
 =====
 sudo apt-get install ctags
@@ -101,16 +117,6 @@ For example, typing:
         raw_input(
             raw_unicode_escape_decode(
                 raw_unicode_escape_encode(
-
-pydiction.py
-============
-Note: You can skip this section if you don't plan to add more modules to complete-dict yourself.  Check if complete-dict already has the modules you intend to use.
-
-This is the Python script used to create the "complete-dict" Vim dictionary file.  I have created and bundled a default complete-dict for your use. I created it using Ubuntu 9.04 Linux, so there won't be any real win32 specific support in it. You're free to run pydiction.py to add, or upgrade, as modules as you want.  The dictionary file will still work if you're using windows, but it won't complete win32 related modules unless you tell it to.      
-
-Usage: In a command prompt, run:
-
-    $ python pydiction.py module ... [-v]
 
 
 To use NERDTree
