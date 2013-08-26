@@ -5,6 +5,7 @@ filetype plugin indent on
 set nu
 set showmatch
 set ai
+set cindent
 set et
 set sw=4
 set sts=4
@@ -36,6 +37,10 @@ let NERDTreeIgnore = []
 for suffix in split(&suffixes, ',')
     let NERDTreeIgnore += [ escape(suffix, '.~') . '$' ]
 endfor
+
+"pydiction 1.2 python auto complete
+let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
+let g:pydiction_menu_height = 15
 
 "在vim中查找python文档  <shift-k>
 let g:pydoc_cmd = 'python -m pydoc'
@@ -85,6 +90,21 @@ function! SetColorColumn()
     endif
 endfunction
 
+" C的编译和运行
+map <F10> :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+    exec "w"
+    exec "!gcc % -o %<"
+    exec "! ./%<"
+endfunc
+
+" C++的编译和运行
+map <F11> :call CompileRunGpp()<CR>
+    func! CompileRunGpp()
+    exec "w"
+    exec "!g++ % -o %<"
+    exec "! ./%<"
+endfunc
 
 " CtrlP (new fuzzy finder)                                                         
 let g:ctrlp_map = ',e'
