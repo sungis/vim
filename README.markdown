@@ -14,6 +14,32 @@ n 模式    （Vim 默认: CTRL-N）        -- 关键字补全，查找 'complet
 Tab 模式   调用 pydiction complete-dict
 
 
+<C-T> 文件夹列表
+<C-P>  ctrlP查找
+,wg     bufTag
+,wG     bufTagAll
+,wf     Line
+,we     cword
+,pe     cfile
+,wm     MRUFiles
+,wc     CmdPalette
+
+
+F1  vim 帮助
+F2  查看类成员
+F3  当前文件夹下查找选中的文字
+F4  加文档头信息
+F5  pep8格式检测
+F6  启动pdb调试
+F7  打印pdb快捷键列表
+F8  查看光标所在位置 变量名 对应的值
+F9  查看几行的字符是不是在同一列上
+F10 C的编译和运行
+F11 C++的编译和运行
+F12  在vim里开启bash
+
+
+
 pydiction.py
 ============
 Note: You can skip this section if you don't plan to add more modules to complete-dict yourself.  Check if complete-dict already has the modules you intend to use.
