@@ -248,9 +248,7 @@ endf
 fu! ctrlp#buffertag#cmd(mode, ...)
 	let s:btmode = a:mode
 	if a:0 && !empty(a:1)
-		let s:btmode = 0
-		let bname = a:1 =~# '^%$\|^#\d*$' ? expand(a:1) : a:1
-		let s:bufname = fnamemodify(bname, ':p')
+		let s:bufname = fnamemodify(a:1, ':p')
 	en
 	retu s:id
 endf
