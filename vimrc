@@ -28,8 +28,8 @@
   endif
   language messages zh_CN.utf-8
 
-  set list
-  set listchars=trail:+
+  "set list
+  "set listchars=trail:+
 
 
   set suffixes=.pyc,.pyo
@@ -113,3 +113,5 @@
     \ 'dir':  '\v[\/](\.git|\.hg|\.svn)$',
     \ 'file': '\.pyc$\|\.pyo$',
     \ }
+
+  let g:rsenseHome = "/usr/lib/rsense-0.3"
