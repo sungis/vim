@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/pongo/nginx/work/conf'
-let g:netrw_dirhist_2='/home/pongo/nginx/nginx/objs'
-let g:netrw_dirhist_3='/home/pongo/nginx/work/bak/bak_api_acl_lua'
-let g:netrw_dirhist_4='/home/pongo/nginx/work/csdn_api/nginx_conf/servers'
-let g:netrw_dirhist_5='/home/pongo/nginx/work/csdn_api_management/config'
-let g:netrw_dirhist_6='/home/pongo/vim/bundle/vim-rails'
