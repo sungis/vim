@@ -11,8 +11,8 @@
   set hlsearch
   set history=1000
   set laststatus=2
-  set t_Co=256
-  colorscheme lucius
+  "set t_Co=256
+  colorscheme darkblue
 
   set expandtab
   set tabstop=2
