@@ -7,6 +7,7 @@
 
   set number
   set autoindent
+  set smartindent
   set cindent
   set hlsearch
   set history=1000

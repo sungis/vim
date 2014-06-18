@@ -24,6 +24,9 @@ Tab 模式   调用 pydiction complete-dict
 ,wm     MRUFiles
 ,wc     CmdPalette
 
+Tcomment
+
+选中你需要注释的行，在normal模式下输入gc即可注释。
 
 F1  vim 帮助
 F2  查看类成员
